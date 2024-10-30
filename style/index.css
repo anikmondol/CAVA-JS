@@ -58,7 +58,7 @@ p {
 }
 
 .section_m1 {
-    padding: 4rem 0rem;
+    margin: 4rem 0rem;
 }
 
 button.normal {
@@ -461,4 +461,57 @@ body {
 
 #banner3 .banner_box3{
     background-image: url("../img/banner/b18.jpg");
+}
+
+
+/* newsletter */
+
+#newsletter{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: wrap;
+    background-image: url("../img/banner/b14.png");
+    background-repeat: no-repeat;
+    background-position: 20% 30%;
+    background-color: #041e42;
+
+}
+
+#newsletter h4{
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--color-withe-1);
+}
+
+#newsletter p{
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #818ea0;
+}
+
+#newsletter p span{
+    color: #ffbd27;
+}
+
+#newsletter .form{
+    display: flex;
+    align-items: center;
+}
+
+#newsletter input{
+    height: 4.2rem;
+    padding: 0 2rem;
+    font-size: 1.4rem;
+    border: 1px solid transparent;
+    border-radius: 0.2rem;
+    outline: none;
+    border-radius: 0.2rem 0rem 0rem 0.2rem;
+}
+
+#newsletter button{
+   background-color: var(--color-primary);
+   color: var(--color-withe-1);
+    border-radius: 0rem 0.2rem 0.2rem 0rem;
+    font-size: 1.3rem;
 }
