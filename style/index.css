@@ -154,7 +154,7 @@ body {
 /* hero */
 
 #hero {
-     background: url(https://img.freepik.com/free-photo/shopping-cart-with-wooden-elements_23-2148879396.jpg?t=st=1730377182~exp=1730380782~hmac=21e8f7e38e67fb7c389edfa544619a891cf3b72d1d729f7eb592c0f1e975998e&w=1380);
+    background: url(https://img.freepik.com/free-photo/shopping-cart-with-wooden-elements_23-2148879396.jpg?t=st=1730377182~exp=1730380782~hmac=21e8f7e38e67fb7c389edfa544619a891cf3b72d1d729f7eb592c0f1e975998e&w=1380);
     height: 90vh;
     width: 100%;
     background-position: top 25% right 0;
@@ -580,29 +580,31 @@ footer .copyright {
     h2 {
         font-size: 3rem;
         line-height: 5.4rem;
-        color: var(--color-dark-1);
     }
 
     button.normal {
         font-size: 1.2rem;
-        font-weight: 600;
         padding: 1.2rem 2rem;
-        color: var(--color-dark-1);
-        background-color: var(--color-withe-1);
-        border-radius: 0.4rem;
-        cursor: pointer;
-        border: none;
-        outline: none;
-        transition: 0.2s;
     }
 
-    .install{
+    .install {
         display: none !important;
+    }
+
+    #gallery,
+    #product1,
+    #feature,
+    #hero {
+        padding: 0rem 1rem;
     }
 
     /* header */
 
-    #header .logo{
+    #header {
+        padding: 1.5rem 1rem;
+    }
+
+    #header .logo {
         width: 10rem;
     }
 
@@ -611,16 +613,9 @@ footer .copyright {
     #hero {
         height: 70vh;
         width: 100%;
-        background-position: top 25% right 20%;
-        background-size: cover;
-        padding: 0px 8rem;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
-        margin-top: 7rem;
-        object-fit: cover;
-        opacity: 1;
+        padding: 0px 1rem;
+        margin-top: 6rem;
+
     }
 
     /* navbar */
@@ -679,15 +674,13 @@ footer .copyright {
     /* feature */
 
     #feature {
-        display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 1.5rem;
+        padding: 2rem 1rem;
     }
 
     /* feature products  */
 
     #product1 .pro_container {
-        display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 1.5rem;
     }
@@ -699,46 +692,19 @@ footer .copyright {
         flex-direction: column;
     }
 
-    #gallery .banner_box1 {
-        background-image: url("../img/banner/b17.jpg");
-        grid-column: 1 / span 12;
-        grid-row: 1 / span 1;
+    #gallery .banner_box {
         height: 35rem;
-    }
-    
-    #gallery .banner_box2 {
-        background-image: url("../img/banner/b10.jpg");
-        grid-column: 1 / span 12;
-        grid-row: 2 / span 1;
-        height: 35rem;
-    }
-    
-    
-    #gallery .banner_box3 {
-        background-image: url("../img/banner/b7.jpg");
-        grid-column: 1 / span 12;
-        grid-row: 2 / span 1;
-        height: 30rem;
-        padding: 0rem 0rem 3rem 3rem;
-    }
-    
-    #gallery .banner_box4 {
-        background-image: url("../img/banner/b4.jpg");
-        grid-column: 1 / span 12;
-        grid-row: 3 / span 1;
-        height: 30rem;
-        padding: 0rem 0rem 3rem 3rem;
-    }
-    
-    #gallery .banner_box5 {
-        background-image: url("../img/banner/b18.jpg");
-        grid-column: 4 / span 12;
-        grid-row: 2 / span 1;
-        height: 30rem;
         padding: 0rem 0rem 3rem 3rem;
     }
 
+
     /* news */
+
+    #newsletter {
+        padding: 4rem 1rem;
+        display: flex;
+        align-items: center;
+    }
 
     #newsletter input {
         height: 4rem;
@@ -749,10 +715,8 @@ footer .copyright {
         outline: none;
         border-radius: 0.2rem 0rem 0rem 0.2rem;
     }
-    
-     #gallery, #product1, #feature #hero, #header{
-        padding: 0rem 1rem;
-    }
+
+
     footer .footer {
         padding: 0rem 1rem;
         padding-top: 2rem;
@@ -771,9 +735,7 @@ footer .copyright {
         padding-left: 2rem;
     }
 
-    #newsletter{
-        display: none;
-    }
+
 
 }
 
@@ -782,57 +744,32 @@ footer .copyright {
 
 @media only screen and (max-width: 767px) {
 
-    .install{
+    .install {
         display: none !important;
     }
-
 
     /* navbar */
 
     #navbar {
-        display: flex;
-        align-items: flex-start;
         flex-direction: column;
-        justify-content: flex-start;
-        position: fixed;
-        top: 0rem;
-        right: -30rem;
         width: 20rem;
-        height: 100vh;
-        background-color: var(--color-withe-2);
-        box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.1);
-        padding: 8rem 0rem 0rem 1rem;
-        transition: 0.3s;
     }
 
     /* header */
 
     #header {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
         padding: 1rem 1rem;
-        background-color: var(--color-withe-2);
-        box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.06);
-        z-index: 999;
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-    
     }
 
     /* hero */
 
-    #hero{
+    #hero {
         padding: 2rem 0.8rem;
         margin-top: 5rem;
     }
 
 
     #hero h1 {
-        color: var(--color-withe-1);
-        font-size: 2.5rem;
         display: none;
     }
 
@@ -841,169 +778,105 @@ footer .copyright {
     }
 
     #hero button {
-        background-image: url(../img/button.png);
-        background-color: transparent;
         color: var(--color-withe-1);
-        border: none;
         padding: 1.4rem 8rem 1.4rem 6.5rem;
-        background-repeat: no-repeat;
-        cursor: pointer;
-        font-weight: 700;
-        font-size: 1.5rem;
     }
 
 
-     /* feature */
+    /* feature */
 
-     #feature {
-        display: grid;
+    #feature {
         grid-template-columns: repeat(2, 1fr);
-        gap: 1.5rem;
-        padding: 0rem 1rem;
+        padding: 2rem 1rem;
     }
 
     /* feature products  */
 
-    #product1{
-        padding: 0rem 1rem;
+    #product1 {
+        padding: 1rem 1rem;
     }
 
     #product1 .pro_container {
-        display: grid;
         grid-template-columns: repeat(1, 1fr);
-        gap: 1.5rem;
 
-    } 
+    }
 
     /* banner */
 
     #banner {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        flex-direction: column;
-        background-image: url("../img/banner/b2.jpg");
-        width: 100%;
-        height: 60vh;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
+        height: 50vh;
     }
 
     #banner h4 {
-        color: var(--color-withe-1);
         font-size: 1.6rem;
     }
-    
+
     #banner h2 {
-        color: var(--color-withe-1);
         font-size: 2rem;
         padding: 1.5rem 0rem;
         line-height: 2.5rem;
     }
-    
-    
+
+
     #banner h2 span {
-        color: #ef3636;
         font-size: 2rem;
         padding: 1rem 0rem;
     }
-    
+
     #banner button:hover {
         background-color: var(--color-primary);
-        color: var(--color-withe-1);
     }
 
-      /* gallery */
+    /* gallery */
 
-      #gallery {
+
+    #gallery {
         display: flex;
         flex-direction: column;
-        padding: 0rem 1rem;
     }
 
     #gallery .banner_box {
-        display: flex;
-        justify-content: end;
-        align-items: flex-start;
-        flex-direction: column;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        border-radius: 0.5rem;
-        padding: 0rem 0rem 2.5rem 2.5rem;
-        width: 100%;
-    }
-
-    #gallery .banner_box1 {
-        background-image: url("../img/banner/b17.jpg");
-        grid-column: 1 / span 6;
-        grid-row: 1 / span 1;
-        height: 30rem;
-    }
-    
-    #gallery .banner_box2 {
-        background-image: url("../img/banner/b10.jpg");
-        grid-column: 7 / span 6;
-        grid-row: 1 / span 1;
-        height: 30rem;
-    }
-    
-    
-    #gallery .banner_box3 {
-        background-image: url("../img/banner/b7.jpg");
-        grid-column: 1 / span 4;
-        grid-row: 2 / span 1;
-        height: 30rem;
-        padding: 0rem 0rem 3rem 3rem;
-    }
-    
-    #gallery .banner_box4 {
-        background-image: url("../img/banner/b4.jpg");
-        grid-column: 5 / span 4;
-        grid-row: 2 / span 1;
-        height: 30rem;
-        padding: 0rem 0rem 3rem 3rem;
-    }
-    
-    #gallery .banner_box5 {
-        background-image: url("../img/banner/b18.jpg");
-        grid-column: 9 / span 4;
-        grid-row: 2 / span 1;
-        height: 30rem;
+        height: 35rem;
         padding: 0rem 0rem 3rem 3rem;
     }
 
     /* newsletter */
 
-    #newsletter{
-        display: none;
+    #newsletter {
+        padding: 2rem 1rem;
     }
-    
+
+    #newsletter input {
+        height: 3.8rem;
+        padding: 0 2rem;
+        border-radius: 0rem 0rem 0rem 0rem;
+    }
+
+    #newsletter button {
+        border-radius: 0rem 0rem 0rem 0rem;
+        font-size: 1.3rem;
+    }
+
+
     /* footer */
 
-footer .footer {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    padding: 0rem 1rem;
-    padding-top: 2rem;
+    footer .footer {
+        justify-content: space-between;
+        flex-direction: column;
+        padding: 0rem 1rem;
+        padding-top: 2rem;
 
-}
+    }
 
-footer .footer .col {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 2rem;
-}
+    footer .footer .col {
+        flex-direction: column;
+        margin-bottom: 2rem;
+    }
 
-footer .footer .logo {
-    width: 10rem;
-    margin-top: 1rem;
-    padding-left: 2rem;
-}
+    footer .footer .logo {
+        width: 10rem;
+        margin-top: 1rem;
+    }
 
 
 
