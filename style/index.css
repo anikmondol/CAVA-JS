@@ -571,6 +571,49 @@ footer .copyright {
 }
 
 
+/* shop page */
+
+#page_header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    background-image: url("../img/banner/b1.jpg");
+    width: 100%;
+    height: 40vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: 8rem;
+    padding: 1.4rem;
+}
+
+#page_header h2, #page_header p{
+   color: var(--color-withe-1);
+}
+
+/* pagination */
+
+#pagination{
+    text-align: center;
+}
+
+
+#pagination a{
+    text-decoration: none;
+    background-color: var(--color-primary);
+    padding: 15px 20px;
+    color: var(--color-withe-1);
+    font-weight: 600;
+    border-radius: 0.3rem;
+    margin-left: 0.5rem;
+    font-size: 1.7rem;
+}
+
+
+
+
 /* start media query */
 
 @media (max-width: 799px) {
