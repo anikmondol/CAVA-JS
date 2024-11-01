@@ -924,6 +924,30 @@ footer .copyright {
     color: var(--color-dark-1);
 }
 
+/* 404_error */
+
+#page_header.error {
+    background-image: url("https://img.freepik.com/free-photo/error-word-beads-alphabet-typography_53876-94523.jpg?t=st=1730491133~exp=1730494733~hmac=5a11aa098c01e5b56e6e268fd0378fcd8c1a3875eb1ac345f4377db6b7c96dfa&w=740");
+    opacity: 0.01;
+}
+
+.error .error_p, .error .error_title {
+    color: var(--color-primary) !important;
+}
+
+
+.error a{
+    text-decoration: none;
+}
+
+.error a:hover{
+    color: var(--color-withe-1) !important;
+}
+
+.error button:hover{
+    background-color: var(--color-primary);
+}
+
 /* start media query */
 
 @media (max-width: 799px) {
@@ -943,6 +967,11 @@ footer .copyright {
     .install {
         display: none !important;
     }
+
+    .contact_none{
+        display: none;
+    }
+
 
     #gallery,
     #product1,
@@ -1268,8 +1297,13 @@ footer .copyright {
     }
 
     .none {
-        display: none !important;
+        display: block;
     }
+
+    .contact_none{
+        display: block;
+    }
+
 
     /* navbar */
 
