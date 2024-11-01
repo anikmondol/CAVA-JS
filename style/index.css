@@ -586,7 +586,7 @@ footer .copyright {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    margin-top: 8rem;
+    margin-top: 8.5rem;
     padding: 1.4rem;
 }
 
@@ -687,6 +687,84 @@ footer .copyright {
     font-size: 1.7rem;
 }
 
+/* blog */
+
+#page_header.blog_header{
+    background-image: url("../img/banner/b19.jpg");
+}
+
+
+#blog{
+    padding: 15rem 15rem 0rem 15rem;
+}
+
+#blog .blog_box{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    padding-bottom: 9rem;
+}
+
+#blog .blog_box .blog_img{
+    width: 50%;
+    margin-right: 4rem;
+}
+
+#blog img{
+    width: 100%;
+    height: 30rem;
+    object-fit: cover;
+    border-radius: 0.4rem;
+}
+
+
+#blog .blog_box .blog_details{
+    width: 50%;
+}
+
+#blog .blog_box .blog_details a{
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: var(--color-dark-1);
+    font-weight: 700;
+    position: relative;
+    transition: 0.3s;
+}
+
+
+#blog .blog_box .blog_details a::after{
+    content: "";
+    width: 5rem;
+    height: 0.1px;
+    background-color: var(--color-dark-1);
+    position: absolute;
+    top: 0.4rem;
+    right: -6rem;
+    transition: 0.3s;
+}
+
+#blog .blog_box .blog_details a:hover{
+    color: var(--color-primary);
+}
+
+#blog .blog_box .blog_details a:hover::after {
+    background-color: var(--color-primary);
+    width: 8rem;
+    right: -10rem;
+}
+
+
+#blog .blog_box h1{
+    position: absolute;
+    top: -5rem;
+    left: 0rem;
+    font-size: 7rem;
+    font-weight: 700;
+    color: #c9cbce;
+    z-index: -9;
+}
+
 /* start media query */
 
 @media (max-width: 799px) {
@@ -722,6 +800,10 @@ footer .copyright {
 
     #header .logo {
         width: 10rem;
+    }
+
+    #page_header {
+        margin-top: 6.2rem;
     }
 
     /* hero */
@@ -898,6 +980,12 @@ footer .copyright {
         margin-bottom: 1rem;
     }
 
+    /* blog */
+
+    #blog{
+        padding: 8rem 1rem;
+    }
+
 
 
 }
@@ -922,6 +1010,10 @@ footer .copyright {
 
     #header {
         padding: 1rem 1rem;
+    }
+
+    #page_header {
+        margin-top: 5.2rem;
     }
 
     /* hero */
@@ -1052,6 +1144,55 @@ footer .copyright {
     #pagination a {
         padding: 12px 15px;
         font-size: 1.4rem;
+    }
+
+    /* blog */
+
+    #blog{
+        padding: 4rem 1rem;
+    }
+    
+
+    #blog .blog_box .blog_img{
+        width: 100%;
+        margin-right: 4rem;
+        margin-bottom: 2rem;
+    }
+    
+
+    #blog .blog_box .blog_details{
+        width: 100%;
+    }
+
+    #blog .blog_box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        position: relative;
+        padding-bottom: 9rem;
+    }
+
+    #blog .blog_box .blog_img{
+        width: 100%;
+        margin-right: 0rem;
+    }
+    
+    #blog img{
+        width: 100%;
+        height: 30rem;
+        object-fit: cover;
+        border-radius: 0.4rem;
+    }
+    
+    .mobile_top{
+        padding-top: 4rem;
+    }
+
+    #blog .blog_box h1{
+        top: -4.7rem;
+        font-size: 5rem;
+        font-weight: 600;
     }
 
 
