@@ -928,13 +928,18 @@ footer .copyright {
 /* 404_error */
 
 #page_header.error {
-    background-image: url("https://media.istockphoto.com/id/1474120810/vector/404-page-not-found.jpg?s=2048x2048&w=is&k=20&c=ZS2zwc0rZ8D7W--PWQqBZo6fiVnPjkyfoUZpBVf5P_g=");
-    height: 50vh;
+    background-image: url("https://img.freepik.com/free-vector/404-error-background-flat-style_23-2147763206.jpg?t=st=1730545232~exp=1730548832~hmac=b2baac860130222b1a3fd82c58d4a623e4fd492fb0ec7d274e9a948fb7e1686f&w=740");
+    height: 60vh;
+    background-color: rgba(5, 0, 0, 0.1);
 }
 
-.error .error_p,
+
 .error .error_title {
-    color: var(--color-primary) !important;
+    color: var(--color-blue-1) !important;
+}
+
+.error .error_p{
+    color: var(--color-withe-1);
 }
 
 
