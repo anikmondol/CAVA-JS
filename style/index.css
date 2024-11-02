@@ -927,8 +927,8 @@ footer .copyright {
 /* 404_error */
 
 #page_header.error {
-    background-image: url("https://img.freepik.com/free-photo/error-word-beads-alphabet-typography_53876-94523.jpg?t=st=1730491133~exp=1730494733~hmac=5a11aa098c01e5b56e6e268fd0378fcd8c1a3875eb1ac345f4377db6b7c96dfa&w=740");
-    opacity: 0.01;
+    background-image: url("https://media.istockphoto.com/id/1474120810/vector/404-page-not-found.jpg?s=2048x2048&w=is&k=20&c=ZS2zwc0rZ8D7W--PWQqBZo6fiVnPjkyfoUZpBVf5P_g=");
+    height: 50vh;
 }
 
 .error .error_p,
@@ -1073,6 +1073,91 @@ footer .copyright {
     height: 0.5px;
     color: var(--color-withe-2) !important;
    }
+
+   /* sing up page */
+
+.auth_container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 90vh;
+    margin-top: 14rem;
+    padding-bottom: 3rem;
+}
+
+.auth_img {
+    width: 50%;
+    height: 100%;
+}
+
+.auth_img>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0rem 0.5rem 0.5rem;
+}
+
+.auth_content {
+    width: 50%;
+    padding: 5rem;
+}
+
+.form_title {
+    font-size: 2rem;
+}
+
+.auth_p {
+    margin: 2rem 0rem;
+}
+
+.form_group {
+    width: 100%;
+}
+
+.form_group a{
+    text-decoration: none;
+}
+
+.form_group span{
+   font-size: 1.4rem;
+}
+
+.form_input {
+    width: 100%;
+    margin-bottom: 2rem;
+    padding: 1rem 0.6rem;
+    border: none;
+    outline: none;
+    border-bottom: 1.5px solid var(--color-dark-1);
+}
+
+.form_input:focus {
+    border-bottom: 1.5px solid var(--color-green);
+}
+
+
+.form_pass {
+    margin-bottom: 3rem;
+}
+
+.form_btn {
+    padding: 1.3rem;
+    background-color: var(--color-primary);
+    color: var(--color-withe-1);
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-size: 1.5rem;
+    border-radius: 0.5rem;
+    transition-duration: 1s;
+}
+
+.form_btn:hover {
+    background-color: var(--color-dark-2);
+    transition-duration: 1s;
+}
+
 
 /* start media query */
 
@@ -1429,6 +1514,23 @@ footer .copyright {
         padding: 3rem;
     }
 
+ /* sing up page */
+
+ .auth_container{
+    border-bottom: 0.1rem solid var(--color-dark-1);
+    margin-top: 5rem;
+ }
+
+ .auth_img {
+    display: none;
+}
+
+.auth_content {
+    width: 100%;
+    padding: 1rem;
+    padding-top: 0rem;
+    margin: 0rem;
+}
 
 
 }
@@ -1722,6 +1824,7 @@ footer .copyright {
 
     /* cart */
 
+   
     #cart table {
         width: 100%;
         border-collapse: collapse;
@@ -1778,5 +1881,18 @@ footer .copyright {
     #subtotal {
         padding: 1rem;
     } 
+
+
+    /* sing up */
+
+
+    .auth_container {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        height: 70vh;
+        margin-top: 5rem;
+        padding-bottom: 3rem;
+    }
     
 }
